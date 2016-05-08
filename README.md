@@ -1,3 +1,5 @@
+This is [tomthecarrot](https://github.com/tomthecarrot)'s fork of Ramotion's [circle-menu](https://github.com/Ramotion/circle-menu) project, with some extra features.  
+Please see the commits for extra feature information.
 ![header](./header.png)
 # CircleMenu
 [![Twitter](https://img.shields.io/badge/Twitter-@Ramotion-blue.svg?style=flat)](http://twitter.com/Ramotion)
