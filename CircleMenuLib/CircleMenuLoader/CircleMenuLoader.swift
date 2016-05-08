@@ -147,18 +147,22 @@ public class CircleMenuLoader: UIView {
         }
         circle?.addAnimation(animation, forKey: nil)
     }
-
-    public func hideAnimation(duration: CGFloat, delay: Double) {
-
+    
+    public func fillScreen(duration: CGFloat, delay: Double) {
+        
         let scale = Init(CABasicAnimation(keyPath: "transform.scale")) {
-            $0.toValue             = 1.2
+            $0.toValue             = 15.0
             $0.duration            = CFTimeInterval(duration)
             $0.fillMode            = kCAFillModeForwards
             $0.removedOnCompletion = false
-            $0.timingFunction      = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseOut)
+            $0.timingFunction      = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseIn)
             $0.beginTime           = CACurrentMediaTime() + delay
         }
         layer.addAnimation(scale, forKey: nil)
+        
+    }
+
+    public func hideAnimation(duration: CGFloat, delay: Double) {
 
         UIView.animateWithDuration(
             CFTimeInterval(duration),

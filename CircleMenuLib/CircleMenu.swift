@@ -213,6 +213,7 @@ public class CircleMenu: UIButton {
     
     if let aButtons = buttons {
       circle.fillAnimation(duration, startAngle: -90 + Float(360 / aButtons.count) * Float(sender.tag))
+      circle.fillScreen(1, delay: duration)
       circle.hideAnimation(0.5, delay: duration)
       
       hideCenterButton(duration: 0.3)
